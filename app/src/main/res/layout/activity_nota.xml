@@ -8,8 +8,30 @@
         tools:context=".NotaActivity">
 
     <TextView
-            android:text="Nota"
+            android:text="Añadir Nota"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" android:id="@+id/textView5" tools:layout_editor_absoluteY="265dp"
-            tools:layout_editor_absoluteX="150dp"/>
+            android:layout_height="wrap_content" android:id="@+id/textView8"
+            android:textSize="30sp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="52dp" android:layout_marginEnd="224dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.1"/>
+    <EditText
+            android:layout_width="236dp"
+            android:layout_height="76dp"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/txtNota"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintVertical_bias="0.409"/>
+    <Button
+            android:text="Añadir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/btnAniadirNota"
+            android:onClick="nuevaNota" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtNota"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
