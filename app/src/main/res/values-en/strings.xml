@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Primera App Android Guillermo</string>
+    <string name="menu_settings">Menu</string>
+    <string name="menuNota">Add note</string>
+    <string name="menuAmigo">Add contact</string>
+    <string name="menuCita">Add event</string>
+    <string name="menuMail">Send email</string>
+    <string name="menuAcerca">About it</string>
+</resources>
