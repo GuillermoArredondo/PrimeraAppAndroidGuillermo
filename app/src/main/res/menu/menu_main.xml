@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+            android:id="@+id/menu_settings"
+            android:title="@string/menu_settings"
+            app:showAsAction="always">
+        <menu>
+            <item
+                    android:id="@+id/menuNota"
+                    android:title="@string/menuNota" android:icon="@android:drawable/ic_menu_edit"/>
+            <item
+                    android:id="@+id/menuMail"
+                    android:icon="@android:drawable/ic_dialog_email"
+                    android:title="@string/menuMail"/>
+            <item
+                    android:id="@+id/menuCita"
+                    android:icon="@android:drawable/ic_menu_today"
+                    android:title="@string/menuCita"/>
+            <item
+                    android:id="@+id/menuAmigo"
+                    android:icon="@android:drawable/ic_menu_myplaces"
+                    android:title="@string/menuAmigo"/>
+            <item
+                    android:id="@+id/menuAcerca"
+                    android:icon="@android:drawable/ic_menu_info_details"
+                    android:title="@string/menuAcerca"/>
+        </menu>
+
+    </item>
+
+</menu>
