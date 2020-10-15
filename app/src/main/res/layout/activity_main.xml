@@ -7,15 +7,16 @@
         android:layout_height="match_parent"
         tools:context=".MainActivity" android:background="@color/colorBG">
     <TextView
-            android:layout_width="383dp"
-            android:layout_height="131dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:text="Módulo de Programación Multimedia y Dispositivos Móviles"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.403"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.559"
             android:textSize="24sp" android:gravity="center" android:id="@+id/mainTextModulo"
-            android:textColorHint="@android:color/black" android:textStyle="bold"/>
+            android:textColorHint="@android:color/black" android:textStyle="bold"
+            app:layout_constraintHorizontal_bias="0.0"/>
     <ImageView
             android:layout_width="126dp"
             android:layout_height="81dp" app:srcCompat="@drawable/cifpicon" android:id="@+id/mainIma"

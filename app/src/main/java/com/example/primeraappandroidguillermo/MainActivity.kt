@@ -14,6 +14,7 @@ class MainActivity : AppCompatActivity() {
 
     }
 
+    //inicia la actividad principal
     override fun onCreateOptionsMenu(menu: Menu):Boolean {
         menuInflater.inflate(R.menu.menu_main,menu)
         return true;
