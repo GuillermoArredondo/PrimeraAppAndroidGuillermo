@@ -6,10 +6,53 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".CitaActivity">
-
     <TextView
-            android:text="cita"
+            android:text="Añadir Cita"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" android:id="@+id/textView" tools:layout_editor_absoluteY="180dp"
-            tools:layout_editor_absoluteX="175dp"/>
+            android:layout_height="wrap_content" android:id="@+id/textView"
+            android:textSize="30sp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="52dp" android:layout_marginEnd="224dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.1"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="Nombre"
+            android:ems="10"
+            android:id="@+id/txtNombreCita"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintVertical_bias="0.313"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="Ubicación"
+            android:ems="10"
+            android:id="@+id/txtUbicacion"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.397"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="Descripción"
+            android:ems="10"
+            android:id="@+id/txtDescripcion"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.476"/>
+    <Button
+            android:text="Añadir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/btnEnviar"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.498" app:layout_constraintVertical_bias="0.592"
+            android:onClick="aniadirCita"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -15,9 +15,10 @@ class NotaActivity : AppCompatActivity() {
         setContentView(R.layout.activity_nota)
     }
 
+    //fun para añadir una nota nueva
     fun nuevaNota(view: View){
         val titulo = "Titulo"
-        val texto = txtNota.toString()
+        val texto = txtNota.text.toString()
         val intent = Intent()
 
         intent.setAction(NoteIntents.ACTION_CREATE_NOTE)

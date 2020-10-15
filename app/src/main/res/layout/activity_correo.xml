@@ -6,10 +6,66 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".CorreoActivity">
-
-    <TextView
-            android:text="correo"
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".CitaActivity">
+        <Button
+                android:text="Enviar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/btnEnviar"
+                app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.498" app:layout_constraintVertical_bias="0.592"
+                android:onClick="mandarMail"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <EditText
+            android:layout_width="324dp"
+            android:layout_height="47dp"
+            android:inputType="textPersonName"
+            android:text="Email"
+            android:ems="10"
+            android:id="@+id/txtMail"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintVertical_bias="0.313"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"/>
+    <EditText
+            android:layout_width="323dp"
+            android:layout_height="42dp"
+            android:inputType="textPersonName"
+            android:text="Asunto"
+            android:ems="10"
+            android:id="@+id/txtAsunto"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.397"/>
+    <EditText
+            android:layout_width="323dp"
+            android:layout_height="42dp"
+            android:inputType="textPersonName"
+            android:text="Texto"
+            android:ems="10"
+            android:id="@+id/txtTexto"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.476"/>
+    <Button
+            android:text="Añadir"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" android:id="@+id/textView4" tools:layout_editor_absoluteY="286dp"
-            tools:layout_editor_absoluteX="158dp"/>
+            android:layout_height="wrap_content" android:id="@+id/btnAniadir2"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.498" app:layout_constraintVertical_bias="0.592"
+            android:onClick="aniadirCita"/>
+    <TextView
+            android:text="Enviar Correo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textView4"
+            android:textSize="30sp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="52dp" android:layout_marginEnd="224dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.1"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
